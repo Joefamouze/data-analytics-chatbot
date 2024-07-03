@@ -17,7 +17,7 @@ uploaded_file = st.file_uploader("Upload a CSV file", type=["csv"])
 
 if uploaded_file is not None:
     # Read the CSV file into a DataFrame
-    df = pd.read_csv(uploaded_file)
+    df = pd.read_csv(uploaded_file, encoding='ISO-8859-1').fillna(value=0)
     st.write("Uploaded CSV file:")
     st.write(df)
     
