@@ -7,7 +7,8 @@ from langchain.agents.agent_types import AgentType
 from langchain_experimental.agents.agent_toolkits import create_pandas_dataframe_agent
 
 # Set the Azure OpenAI API key
-os.environ["AZURE_OPENAIAPI_KEY"] = "AZURE_OPENAI_KEY"
+os.environ["AZURE_OPENAIAPI_KEY"] = st.secrets["AZURE_OPENAI_KEY"]
+
 
 # Streamlit app
 st.title("Data Analytics Buddy 📊")
