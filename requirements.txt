@@ -10,3 +10,5 @@ openai
 langchain_community
 langchain_experimental
 tabulate
+matplotlib
+seaborn
