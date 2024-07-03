@@ -35,12 +35,9 @@ if uploaded_file is not None:
     # Add a text input for user queries
     user_query = st.text_input("Ask a question about your data:")
     
-    if user_query:
-        # Create a HumanMessage with the user query
-        human_message = HumanMessage(content=user_query)
-        
+    if user_query: 
         # Invoke the agent with the human message and display the output
-        response = agent.invoke(input=human_message)
+        response = agent.invoke(input=user_query)
         st.write("Agent Output:")
         st.write(response)
 else:
