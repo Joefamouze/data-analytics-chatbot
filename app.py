@@ -37,7 +37,7 @@ if uploaded_file is not None:
     
     if user_query: 
         # Invoke the agent with the human message and display the output
-        response = agent.invoke(input=user_query)
+        response = agent.invoke(user_query)
         st.write("Agent Output:")
         st.write(response)
 else:
